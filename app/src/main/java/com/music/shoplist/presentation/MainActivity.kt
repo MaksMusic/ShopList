@@ -1,8 +1,8 @@
-package com.music.shoplist
+package com.music.shoplist.presentation
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.LayoutInflater
+import com.music.shoplist.R
 import com.music.shoplist.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
