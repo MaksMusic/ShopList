@@ -1,8 +1,8 @@
 package com.music.shoplist.domain
 
-class GetShopListUseCase {
+class GetShopListUseCase(private val shopListRepisitory: ShopListRepisitory) {
 
-    fun genShopList() : List<ShopItem> {
-        TODO()
+    fun getShopList() : List<ShopItem> {
+        return shopListRepisitory.getShopList()
     }
 }

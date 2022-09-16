@@ -1,7 +1,7 @@
 package com.music.shoplist.domain
 
-class EditShopItemUseCase {
-    fun editShopItem(shopItem: ShopItem?) : ShopItem?{
-        TODO()
+class EditShopItemUseCase(private val shopListRepisitory: ShopListRepisitory) {
+    fun editShopItem(shopItem: ShopItem?){
+       shopListRepisitory.editShopItem(shopItem)
     }
 }

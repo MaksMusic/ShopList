@@ -1,8 +1,8 @@
 package com.music.shoplist.domain
 
-class AddShopItemUseCase {
+class AddShopItemUseCase(private val shopListRepisitory: ShopListRepisitory) {
 
-    fun addShopItem(shopItem: ShopItem) : Boolean{
-    TODO()
+    fun addShopItem(shopItem: ShopItem) {
+    shopListRepisitory.addShopItem(shopItem)
     }
 }

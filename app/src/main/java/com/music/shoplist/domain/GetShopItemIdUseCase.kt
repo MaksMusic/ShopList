@@ -1,7 +1,7 @@
 package com.music.shoplist.domain
 
-class GetShopItemIdUseCase {
+class GetShopItemIdUseCase(private val shopListRepisitory: ShopListRepisitory) {
     fun getShopItem(shopItemId:Int) : ShopItem?{
-        TODO()
+     return shopListRepisitory.getShopItem(shopItemId)
     }
 }

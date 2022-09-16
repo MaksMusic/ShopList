@@ -1,8 +1,8 @@
 package com.music.shoplist.domain
 
-class DeleteShopItemUseCade {
+class DeleteShopItemUseCade(private val shopListRepisitory: ShopListRepisitory) {
 
-    fun deleteItem (shopItem: ShopItem) :Boolean{
-        TODO()
+    fun deleteItem (shopItem: ShopItem){
+       shopListRepisitory.deleteItem(shopItem)
     }
 }
